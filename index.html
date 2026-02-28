@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jonathan Wang - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!--Header Section -->
+    <section>
+        <nav id="navbar">
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="https://drive.google.com/file/d/1qbRnDGnxZMDgsnqJrdxcabikswK1Y6gG/view?usp=sharing" target="_blank" class="resume-link">Resume</a></li>
+            </ul>
+        </nav>
+    </section>
+
+    <!-- Landing Section -->
+    <section id="landing">
+        <h1 id="name" class="clickable">Jonathan Wang</h1>
+    </section>
+
+    <!-- Content Section -->
+    <section id="content">
+        <!-- About Me Section -->
+        <div class="section-container" id="about">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <img src="IMG_1735.jpg" alt="Jonathan Wang" class="about-image">
+                <div class="about-text-container">
+                    <p class="about-text">
+                        I'm a Computer Science major at Cornell University with a passion for building systems and software that make positive impacts on people, communities, and organizations.
+                    <p class="about-text">
+                        I have experience in infrastructure design and tooling, full-stack development, and machine learning. I'm particularly interested in building accessible technologies that empower people and improve quality of life.
+                    </p>
+                    <p class="about-text">
+                        In my free time, I enjoy building creative projects, rock climbing, running, and playing guitar. I'm a big foodie as well and am learning how to cook new dishes. I'm always open to connecting with others, so feel free to reach out if you'd like to chat about anything!
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Experience Section -->
+        <div class="section-container" id="experience">
+            <h2 class="section-title">Experience</h2>
+            <div class="timeline-container">
+                <div class="experience-item">
+                    <h3 class="experience-title">Incoming Software Engineer Intern</h3>
+                    <p class="experience-company">Dell Technologies</p>
+                    <p class="experience-date">Summer 2026 • Hopkinton, MA</p>
+                </div>
+                <div class="experience-item">
+                    <h3 class="experience-title">Software Engineer</h3>
+                    <p class="experience-company">Cornell Assistive Technologies</p>
+                    <p class="experience-date">October 2024 - Present • Ithaca, NY</p>
+                    <ul class="experience-description">
+                        <li>Implemented detection algorithms for sensory overload watch, using advanced signal processing techniques to analyze heart rate and skin resistivity, achieving an 85% success rate in predicting incoming sensory overload</li>
+                        <li>Mapped EMG sensor data to low ear controls with machine learning models, presenting at 5+ community events</li>
+                        <li>Developed and supported software solutions in collaborative Agile ceremonies, contributing to sprint planning, testing cycles, and technical decision-making to align engineering work with accessibility-focused product goals</li>
+                    </ul>
+                </div>
+                <div class="experience-item">
+                    <h3 class="experience-title">Software Developer Intern</h3>
+                    <p class="experience-company">Cornell SC Johnson College of Business</p>
+                    <p class="experience-date">June 2025 - November 2025 • Ithaca, NY</p>
+                    <ul class="experience-description">
+                        <li>Led Rails 7 migration initiative by restructuring 10+ legacy backend systems into modular services and modernized REST API endpoints, improving maintainability and aligning systems with microservice-style architecture</li>
+                        <li>Consolidated outdated legacy systems, reducing infrastructure costs by 20% and simplifying deployment pipelines</li>
+                        <li>Improved CI/CD reliability by enhancing Git-based workflows and Jenkins pipelines, reducing deployment friction and enabling repeatable test execution by large margins</li>
+                    </ul>
+                </div>
+                <div class="experience-item">
+                    <h3 class="experience-title">Research Assistant</h3>
+                    <p class="experience-company">Phonetics Lab, Cornell University</p>
+                    <p class="experience-date">August 2024 - December 2024 • Ithaca, NY</p>
+                    <ul class="experience-description">
+                        <li>Improved speech-to-text accuracy for diverse accents, utilizing Whisper to optimize ASR parameters and prompts</li>
+                        <li>Analyzed 50+ audio datasets to identify labeling anomalies and strengthen dataset quality for model retraining</li>
+                        <li>Optimized AI inference pipelines, improving model reliability and troubleshooting failures across workflows</li>
+                    </ul>
+                </div>
+                <div class="experience-item">
+                    <h3 class="experience-title">CSMore Intern</h3>
+                    <p class="experience-company">Cornell Bowers CIS</p>
+                    <p class="experience-date">July 2024 - August 2024 • Ithaca, NY</p>
+                    <ul class="experience-description">
+                        <li>Designed and simulated multiplexers and clock circuits using registers to enhance computational efficiency by 25%</li>
+                        <li>Developed a high-performance BMP image analysis tool, processing 500+ files with sub-10ms runtime per image</li>
+                        <li>Optimized OCaml functions with pattern matching and tail recursion, improving runtime and maintainability</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Projects Section -->
+        <div class="section-container" id="projects">
+            <h2 class="section-title">Projects</h2>
+            <div class="project-item">
+                <h3 class="project-title">CineMapAI</h3>
+                <p class="project-description">
+                    A full-stack storytelling platform that uses AI to transform speech into visual flowcharts, built with React and Django. The platform integrates Google Gemini APIs to support multi-user real-time transcription and narrative visualization workflows, featuring a modular backend architecture that enables handling multiple concurrent projects with persistent data management. This was our submission for the BigRed//Hacks 2025 hackathon.
+                </p>
+                <div class="project-tech">
+                    <span class="tech-tag">Python</span>
+                    <span class="tech-tag">React</span>
+                    <span class="tech-tag">Next.js</span>
+                    <span class="tech-tag">Django</span>
+                    <span class="tech-tag">TypeScript</span>
+                    <span class="tech-tag">Tailwind</span>
+                </div>
+                <div class="project-links">
+                    <a href="https://devpost.com/software/cinemap-tzdl26" target="_blank" class="project-link">View Project</a>
+                    <a href="https://docs.google.com/presentation/d/11NoVryxy8zZI6ZQoqonoTYbWbkasRNYTRwEAEJYtMAY/edit?slide=id.g36633791f08_1_0#slide=id.g36633791f08_1_0" target="_blank" class="project-link">Slide Deck</a>
+                </div>
+            </div>
+            <div class="project-item">
+                <h3 class="project-title">CUDashboard</h3>
+                <p class="project-description">
+                    A personalized academic dashboard built with Flask and REST APIs to help students visualize their performance metrics. The app provides real-time performance tracking and interactive visualizations of academic records and schedules that enhance the user experience when monitoring academic progress. It is deployed in Docker containers to streamline development and ensure scalability across different environments.
+                </p>
+                <div class="project-tech">
+                    <span class="tech-tag">Python</span>
+                    <span class="tech-tag">Flask</span>
+                    <span class="tech-tag">Docker</span>
+                    <span class="tech-tag">HTML/CSS</span>
+                    <span class="tech-tag">JavaScript</span>
+                </div>
+            </div>
+            <div class="project-item">
+                <h3 class="project-title">Microplastic Recognition CubeSat</h3>
+                <p class="project-description">
+                    A prototype cubesat project as part of AIAA's Cubesat Challenge, focusing on detecting microplastics in ocean water using advanced image processing algorithms. Our protoype processed over 10 GB of multispectral data using optimized NumPy pipelines, which improved analysis throughput by 50%. It also includes thrust motion functions for 3D movement tracking, implemented with the TensorFlow API to ensure optimal motion analysis.
+                </p>
+                <div class="project-tech">
+                    <span class="tech-tag">Python</span>
+                    <span class="tech-tag">NumPy</span>
+                    <span class="tech-tag">PyTorch</span>
+                    <span class="tech-tag">TensorFlow</span>
+                </div>
+                <div class="project-links">
+                    <a href="https://docs.google.com/presentation/d/1y7TRRB4MDzBrwy13fHb-Gh8PfD9fNa-c_SI5GoZq41w/edit?slide=id.p#slide=id.p" target="_blank" class="project-link">Design Review</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="social-links">
+            <a href="https://www.linkedin.com/in/jonathan-y-wang" target="_blank" class="social-link" aria-label="LinkedIn Profile">
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                </svg>
+            </a>
+            <a href="https://github.com/jonathanywang" target="_blank" class="social-link" aria-label="GitHub Profile">
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                </svg>
+            </a>
+            <a href="https://www.instagram.com/jonathanywang/" target="_blank" class="social-link" aria-label="Instagram Profile">
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                </svg>
+            </a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
