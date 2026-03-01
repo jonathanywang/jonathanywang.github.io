@@ -384,6 +384,21 @@ body.no-scroll {
 
 /* Responsive Design */
 @media (max-width: 768px) {
+    /* Mobile navbar adjustments */
+    #navbar ul {
+        justify-content: center;
+        padding: 10px 0;
+    }
+
+    #navbar li {
+        margin: 0 4px;
+    }
+
+    #navbar a {
+        padding: 6px 10px;
+        font-size: 0.9rem;
+    }
+
     #name {
         font-size: 2.5rem;
         padding: 0 20px;
@@ -433,6 +448,16 @@ body.no-scroll {
 }
 
 @media (max-width: 480px) {
+    /* Extra small mobile navbar */
+    #navbar li {
+        margin: 0 2px;
+    }
+
+    #navbar a {
+        padding: 5px 8px;
+        font-size: 0.85rem;
+    }
+
     #name {
         font-size: 2rem;
     }
