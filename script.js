@@ -2,6 +2,42 @@
 const nameElement = document.getElementById('name');
 const contentSection = document.getElementById('content');
 
+// Get star containers for parallax effect
+const starsContainer = document.querySelector('.stars-container');
+const shootingStarsContainer = document.querySelector('.shooting-stars-container');
+
+// Parallax effect for stars
+let mouseX = 0;
+let mouseY = 0;
+let currentX = 0;
+let currentY = 0;
+
+document.addEventListener('mousemove', (e) => {
+    mouseX = (e.clientX / window.innerWidth - 0.5) * 2;
+    mouseY = (e.clientY / window.innerHeight - 0.5) * 2;
+});
+
+function animateParallax() {
+    // Smooth interpolation for natural movement
+    currentX += (mouseX - currentX) * 0.05;
+    currentY += (mouseY - currentY) * 0.05;
+    
+    // Apply subtle parallax to stars (slower movement)
+    if (starsContainer) {
+        starsContainer.style.transform = `translate(${currentX * 15}px, ${currentY * 15}px)`;
+    }
+    
+    // Apply slightly faster parallax to shooting stars
+    if (shootingStarsContainer) {
+        shootingStarsContainer.style.transform = `translate(${currentX * 25}px, ${currentY * 25}px)`;
+    }
+    
+    requestAnimationFrame(animateParallax);
+}
+
+// Start parallax animation
+animateParallax();
+
 // Force scroll to top on page load/refresh
 window.addEventListener('beforeunload', () => {
     window.scrollTo(0, 0);
