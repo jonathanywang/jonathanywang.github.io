@@ -133,3 +133,31 @@ style.textContent = `
     }
 `;
 document.head.appendChild(style);
+
+// Random shooting star appearance (5% chance per check)
+const shootingStars = document.querySelectorAll('.shooting-star');
+let activeShootingStar = null;
+
+function triggerRandomShootingStar() {
+    // Only trigger if no shooting star is currently active
+    if (activeShootingStar) return;
+    
+    // 5% chance to trigger a shooting star
+    if (Math.random() < 0.05) {
+        // Pick a random shooting star
+        const randomIndex = Math.floor(Math.random() * shootingStars.length);
+        const star = shootingStars[randomIndex];
+        
+        activeShootingStar = star;
+        star.classList.add('active');
+        
+        // Remove after animation completes (3 seconds)
+        setTimeout(() => {
+            star.classList.remove('active');
+            activeShootingStar = null;
+        }, 3000);
+    }
+}
+
+// Check every second for a possible shooting star
+setInterval(triggerRandomShootingStar, 1000);
