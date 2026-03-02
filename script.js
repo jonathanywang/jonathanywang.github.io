@@ -65,10 +65,32 @@ nameElement.addEventListener('click', () => {
     // Play ocean click sound
     playOceanClick();
     
-    // Scroll to the content section smoothly
-    contentSection.scrollIntoView({ 
-        behavior: 'smooth',
-        block: 'start'
+    // Smooth scroll with optimized animation
+    requestAnimationFrame(() => {
+        const targetPosition = contentSection.offsetTop;
+        const startPosition = window.pageYOffset;
+        const distance = targetPosition - startPosition;
+        const duration = 800; // ms
+        let startTime = null;
+
+        function animation(currentTime) {
+            if (startTime === null) startTime = currentTime;
+            const timeElapsed = currentTime - startTime;
+            const progress = Math.min(timeElapsed / duration, 1);
+            
+            // Easing function for smooth deceleration
+            const ease = progress < 0.5
+                ? 4 * progress * progress * progress
+                : 1 - Math.pow(-2 * progress + 2, 3) / 2;
+            
+            window.scrollTo(0, startPosition + distance * ease);
+            
+            if (timeElapsed < duration) {
+                requestAnimationFrame(animation);
+            }
+        }
+
+        requestAnimationFrame(animation);
     });
 });
 
