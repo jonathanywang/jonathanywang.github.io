@@ -82,6 +82,29 @@ body.no-scroll {
     overflow: hidden;
 }
 
+.name-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2px;
+    z-index: 10;
+}
+
+.greeting {
+    font-size: 0.8rem;
+    font-weight: 400;    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;    color: rgb(255, 255, 255);
+    text-align: left;
+    letter-spacing: 0.5px;
+    margin: 0;
+    line-height: 1;
+    transition: transform 0.3s ease;
+    opacity: 0.8;
+}
+
+.name-container:hover .greeting {
+    transform: translateY(-8px);
+}
+
 /* Twinkling stars */
 .stars-container {
     position: absolute;
@@ -89,6 +112,7 @@ body.no-scroll {
     height: 100%;
     pointer-events: none;
     z-index: 1;
+    transition: transform 0.1s ease-out;
 }
 
 .star {
@@ -102,21 +126,21 @@ body.no-scroll {
     animation: twinkle 3s ease-in-out infinite;
 }
 
-.star:nth-child(1) { animation-delay: 0s; animation-duration: 2.5s; }
-.star:nth-child(2) { animation-delay: 0.5s; animation-duration: 3.2s; }
-.star:nth-child(3) { animation-delay: 1s; animation-duration: 2.8s; }
-.star:nth-child(4) { animation-delay: 1.5s; animation-duration: 3.5s; }
-.star:nth-child(5) { animation-delay: 0.3s; animation-duration: 2.6s; }
-.star:nth-child(6) { animation-delay: 2s; animation-duration: 3s; }
-.star:nth-child(7) { animation-delay: 0.8s; animation-duration: 2.9s; }
-.star:nth-child(8) { animation-delay: 1.2s; animation-duration: 3.3s; }
-.star:nth-child(9) { animation-delay: 1.8s; animation-duration: 2.7s; }
-.star:nth-child(10) { animation-delay: 0.2s; animation-duration: 3.1s; }
-.star:nth-child(11) { animation-delay: 2.2s; animation-duration: 2.4s; }
-.star:nth-child(12) { animation-delay: 0.6s; animation-duration: 3.4s; }
-.star:nth-child(13) { animation-delay: 1.4s; animation-duration: 2.5s; }
-.star:nth-child(14) { animation-delay: 2.5s; animation-duration: 3.2s; }
-.star:nth-child(15) { animation-delay: 1.6s; animation-duration: 2.8s; }
+.star:nth-child(1) { animation-delay: 0s; animation-duration: 4s; }
+.star:nth-child(2) { animation-delay: 0.5s; animation-duration: 5.1s; }
+.star:nth-child(3) { animation-delay: 1s; animation-duration: 4.5s; }
+.star:nth-child(4) { animation-delay: 1.5s; animation-duration: 5.5s; }
+.star:nth-child(5) { animation-delay: 0.3s; animation-duration: 4.2s; }
+.star:nth-child(6) { animation-delay: 2s; animation-duration: 4.8s; }
+.star:nth-child(7) { animation-delay: 0.8s; animation-duration: 4.6s; }
+.star:nth-child(8) { animation-delay: 1.2s; animation-duration: 5.3s; }
+.star:nth-child(9) { animation-delay: 1.8s; animation-duration: 4.3s; }
+.star:nth-child(10) { animation-delay: 0.2s; animation-duration: 5s; }
+.star:nth-child(11) { animation-delay: 2.2s; animation-duration: 4s; }
+.star:nth-child(12) { animation-delay: 0.6s; animation-duration: 5.4s; }
+.star:nth-child(13) { animation-delay: 1.4s; animation-duration: 4s; }
+.star:nth-child(14) { animation-delay: 2.5s; animation-duration: 5.1s; }
+.star:nth-child(15) { animation-delay: 1.6s; animation-duration: 4.5s; }
 
 @keyframes twinkle {
     0%, 100% {
@@ -137,6 +161,7 @@ body.no-scroll {
     pointer-events: none;
     z-index: 2;
     overflow: hidden;
+    transition: transform 0.1s ease-out;
 }
 
 .shooting-star {
