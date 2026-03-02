@@ -111,7 +111,7 @@ window.addEventListener('scroll', () => {
     }
 });
 
-// Optional: Add a subtle animation when hovering
+// Add a subtle animation when hovering
 nameElement.addEventListener('mouseenter', () => {
     nameElement.style.animation = 'pulse 0.5s ease';
 });
